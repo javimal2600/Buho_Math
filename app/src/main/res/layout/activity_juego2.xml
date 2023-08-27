@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper_3"
+    android:backgroundTint="@color/bg"
+    android:foregroundTint="@color/blue_dark"
+    app:barrierMargin="@dimen/material_emphasis_medium"
+    tools:context=".juego2">
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="matrix"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/detras" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="145dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/purple"
+        android:onClick="ayudajuego"
+        android:text="@string/help"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:cornerRadius="20px"
+        app:icon="@drawable/ayuda"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.894"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_2"
+        android:layout_width="325dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="@color/yellow"
+        android:fontFamily="@font/montserrat_black_italic"
+        android:onClick="sig"
+        android:text="@string/siguiente"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        app:cornerRadius="20px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="137dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/purple"
+        android:fontFamily="@font/montserrat_medium"
+        android:onClick="menu"
+        android:text="Inicio"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:cornerRadius="20px"
+        app:icon="@drawable/house"
+        app:layout_constraintEnd_toStartOf="@+id/button6"
+        app:layout_constraintHorizontal_bias="0.326"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="421dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/button_gradient"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:orientation="horizontal"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="374dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="19dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="331dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="313dp"
+                    android:layout_height="64dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/primerpaso"
+                    android:textColor="@color/blue_dark"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="308dp"
+                    android:layout_height="76dp"
+                    app:srcCompat="@drawable/ejercicio1" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="182dp"
+                    android:layout_height="64dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/resp1"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/blue_dark"
+                    android:textSize="26sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="17dp"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <Spinner
+                    android:id="@+id/sp"
+                    android:layout_width="308dp"
+                    android:layout_height="58dp"
+                    android:background="@drawable/button_gradient"
+                    android:backgroundTint="@color/blue" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="14dp"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="307dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button9"
+                        android:layout_width="166dp"
+                        android:layout_height="60dp"
+                        android:backgroundTint="@color/red"
+                        android:fontFamily="@font/montserrat_extrabold_italic"
+                        android:onClick="res"
+                        android:text="@string/verificar"
+                        android:textColor="@color/yellow"
+                        android:textSize="16sp"
+                        app:cornerRadius="200px"
+                        app:strokeColor="@color/blue"
+                        app:strokeWidth="1dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

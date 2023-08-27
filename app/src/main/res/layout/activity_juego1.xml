@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper_3"
+    android:backgroundTint="@color/bg"
+    tools:context=".juego1">
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="matrix"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/detras" />
+
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_width="363dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="@color/purple_dark"
+        android:fontFamily="@font/montserrat_black_italic"
+        android:onClick="sig"
+        android:text="@string/siguiente"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:cornerRadius="20px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="145dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/purple_dark"
+        android:onClick="ayudajuego"
+        android:text="@string/help"
+        android:textAlignment="center"
+        android:textColor="@color/ic_icono_launcher_background"
+        app:cornerRadius="20px"
+        app:icon="@drawable/ayuda"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="145dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/purple_dark"
+        android:fontFamily="@font/montserrat_medium"
+        android:onClick="menu"
+        android:text="Inicio"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:cornerRadius="20px"
+        app:icon="@drawable/house"
+        app:layout_constraintEnd_toStartOf="@+id/button7"
+        app:layout_constraintHorizontal_bias="0.262"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="489dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_gradient"
+        android:backgroundTint="@color/yellow"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.604"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.438">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="127dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:fontFamily="@font/merienda_one"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/bg"
+                android:textSize="96sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/msj1"
+                android:layout_width="366dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_extrabold_italic"
+                android:text="Elige todos los binomios"
+                android:textAlignment="center"
+                android:textColor="@color/ic_icono_launcher_background"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="292dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="18dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="178dp"
+                android:layout_height="272dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="152dp"
+                    android:layout_height="67dp"
+                    android:background="@drawable/mala1"
+                    android:contentDescription="mala"
+                    android:onClick="mala1"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/mala1" />
+
+                <ImageButton
+                    android:id="@+id/imageButton4"
+                    android:layout_width="152dp"
+                    android:layout_height="67dp"
+                    android:background="@drawable/mala3"
+                    android:contentDescription="mala"
+                    android:onClick="mala3"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/mala3" />
+
+                <ImageButton
+                    android:id="@+id/imageButton6"
+                    android:layout_width="152dp"
+                    android:layout_height="67dp"
+                    android:background="@drawable/buena4"
+                    android:contentDescription="buena"
+                    android:onClick="buena3"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/buena4" />
+
+                <ImageButton
+                    android:id="@+id/imageButton9"
+                    android:layout_width="152dp"
+                    android:layout_height="67dp"
+                    android:background="@drawable/buena5"
+                    android:contentDescription="buena"
+                    android:onClick="buena4"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/buena5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="181dp"
+                android:layout_height="272dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="152dp"
+                    android:layout_height="67dp"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/buena2"
+                    android:backgroundTint="@null"
+                    android:contentDescription="buena"
+                    android:onClick="buena1"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/buena2" />
+
+                <ImageButton
+                    android:id="@+id/imageButton3"
+                    android:layout_width="152dp"
+                    android:layout_height="67dp"
+                    android:background="@drawable/mala2"
+                    android:contentDescription="mala"
+                    android:onClick="mala2"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/mala2" />
+
+                <ImageButton
+                    android:id="@+id/imageButton5"
+                    android:layout_width="152dp"
+                    android:layout_height="67dp"
+                    android:background="@drawable/buena3"
+                    android:contentDescription="buena"
+                    android:onClick="buena2"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/buena3" />
+
+                <ImageButton
+                    android:id="@+id/imageButton7"
+                    android:layout_width="152dp"
+                    android:layout_height="67dp"
+                    android:background="@drawable/mala5"
+                    android:contentDescription="mala"
+                    android:onClick="mala4"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/mala5" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

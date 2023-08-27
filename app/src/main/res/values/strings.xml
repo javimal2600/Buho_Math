@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">BuhoMath</string>
+    <string name="help"><u>AYUDA</u></string>
+    <string name="regresar">REGRESAR</string>
+    <string name="siguiente">SIGUIENTE</string>
+    <string name="menu">Menu principal</string>
+    <string name="verificar">Verificar</string>
+    <string name="start">INICIO</string>
+    <string name="jugar">¿Como jugar?</string>
+    <string name="Inst_titulo">Bienvenido a "Buho Math"</string>
+    <string name="Inst_1">En este divertido juego, podrás poner a prueba tus habilidades para identificar binomios cuadrados perfectos mientras aprendes de manera interactiva. ¿Estás listo para el desafío? ¡Empecemos!</string>
+    <string name="Inst_titulo_2">Instrucciones del juego:</string>
+    <string name="punto1">Se te presentará una serie de ejercicios con binomios. Cada ejercicio contendrá un binomio y varias opciones de respuesta.</string>
+    <string name="punto2">Lee cuidadosamente el binomio proporcionado en cada ejercicio.</string>
+    <string name="punto3">Analiza las opciones de respuesta y selecciona la que consideres correcta, es decir, el binomio cuadrado perfecto correspondiente al binomio dado.</string>
+    <string name="punto4">Haz clic en la opción que hayas seleccionado para verificar si es la respuesta correcta.</string>
+    <string name="Inst_3">¡Prepárate para una experiencia emocionante mientras aprendes a identificar binomios cuadrados perfectos! Haz clic en el botón "Regresar" para comenzar a jugar y mejorar tus habilidades matemáticas. ¡Diviértete!</string>
+    <string name="aprende">Aprende a identificar binomios</string>
+    <string name="tema">Un binomio al cuadrado es una expresión que tiene la forma general (ax+b)²
+Tambien existe un binomio al cuadrado con resta y tiene la forma general (ax − b)²
+
+Ejemplos:
+</string>
+    <string name="juego2">Calcular binomios al cudrado</string>
+    <string name="tema2">1° (m-3n)² :\nprimero buscamos el primer termino y es:\t\tm,\ndespues buscamos el segundo termino y es:\t\t-3n,\na continuacion se hace un calculo el doble del producto por el segundo:\t\t2(m)(-3n)=-6mn,\npor lo tanto el resultado seria el siguiente:\t\t</string>
+    <string name="primerpaso">Del siguiente binomio ¿cuál se considera el primer termino?</string>
+    <string name="resp1">a)2a²\t\t\t\tb)5a\t\t\t\tc)2a²b\t\t\t\td)5</string>
+    <string name="segundopaso">Cual es el valor del segundo termino:\na)5\t\t\t          b)2a\t\t\t          c)5a\t\t\t          d)-5a</string>
+    <string name="tercerpaso">Cual es el primer termino al cuadrado:\na)4a²b\t\t\t      b)4a⁴b²\t\t\t\t\t\t\t\t\tc)4ab²\t\t\t      d)a⁴b</string>
+    <string name="cuartopaso">Cual es el segundo termino al cuadrado:\na)25a²\t\t\t      b)5a\t\t\t      c)-25\t\t\t      d)25a</string>
+    <string name="quintopaso">Cual es el doble producto del primero por el segundo :\na)10a\t\t\t      b)20a³b\t\t\t      c)-20a³b\t\t\t      d)10a³b</string>
+    <string name="sextopaso">Cual es el resultado:\na)4a⁴b²-20a³b+25a²\t\t\t      b)4ab²+20a³-25a\t\t\t      c)4a⁴b²+20a³\t\t\t      d)4a⁴b²-20a³b-25</string>
+    <string name="ranking">RANKING</string>
+    <string name="rank">RANKING</string>
+    <string name="navigation_drawer_open"></string>
+    <string name="navigation_drawer_close"></string>
+    <string name="danddrop">DragDrop</string>
+
+    <string name="drag1">(X+1)²</string>
+    <string name="drag2">(X+Y)²</string>
+    <string name="Dragand">Coloca el resultado correcto de la factorización en su lugar</string>
+
+</resources>
